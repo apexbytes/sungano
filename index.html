@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motel Sungano - Premium guest house with dining and recreational activities">
+    <title>Motel Sungano - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header with Navigation -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="assets/sungano-logo.png" alt="Motel Sungano Logo">
+            <span>Motel Sungano</span>
+        </a>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="booking.html" class="nav-link">Book a Stay</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="dining.html" class="nav-link">Dining</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Experience Comfort & African Hospitality</h1>
+            <p class="hero-subtitle">Your perfect getaway for relaxation, dining, and memorable events</p>
+
+            <div class="hero-cta">
+                <a href="booking.html" class="btn btn-primary btn-lg">Book Your Stay</a>
+                <a href="activities.html" class="btn btn-secondary btn-lg">Explore Activities</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Booking Widget -->
+<section class="quick-booking">
+    <div class="container">
+        <div class="booking-card">
+            <h2 class="section-title">Plan Your Visit</h2>
+
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="check-in">Check In</label>
+                    <input type="date" id="check-in" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="check-out">Check Out</label>
+                    <input type="date" id="check-out" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests" class="form-input">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3-5 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Check Availability</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose Motel Sungano</h2>
+        <p class="section-subtitle">We offer exceptional services to make your stay memorable</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bed"></i>
+                </div>
+                <h3 class="feature-title">Comfortable Rooms</h3>
+                <p class="feature-desc">Spacious accommodations with modern amenities for all types of travelers.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="feature-title">African Cuisine</h3>
+                <p class="feature-desc">Experience authentic local flavors prepared by our expert chefs.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-swimming-pool"></i>
+                </div>
+                <h3 class="feature-title">Recreation</h3>
+                <p class="feature-desc">Swimming, sports, and nature walks to keep you entertained.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3 class="feature-title">Event Spaces</h3>
+                <p class="feature-desc">Perfect venues for conferences, seminars, and special occasions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Room Showcase -->
+<section class="room-showcase">
+    <div class="container">
+        <h2 class="section-title">Our Accommodations</h2>
+        <p class="section-subtitle">Find the perfect space for your stay</p>
+
+        <div class="room-grid">
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('assets/hotelroom-7772422_1280.jpg')">
+                    <span class="room-tag">Popular</span>
+                </div>
+                <div class="room-content">
+                    <h3 class="room-title">Standard Room</h3>
+                    <p class="room-desc">Comfortable for individuals or couples with all basic amenities.</p>
+                    <div class="room-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 25m²</span>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">$85</span>
+                        <span class="price-period">/night</span>
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-block">Book Now</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('assets/pexels-enginakyurt-1579253.jpg')">
+                    <span class="room-tag">Popular</span>
+                </div>
+                <div class="room-content">
+                    <h3 class="room-title">Standard Room</h3>
+                    <p class="room-desc">Comfortable for individuals or couples with all basic amenities.</p>
+                    <div class="room-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 25m²</span>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">$85</span>
+                        <span class="price-period">/night</span>
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-block">Book Now</a>
+                </div>
+            </div>
+
+
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('assets/pexels-martin-rivera-334692485-16197244.jpg')">
+                    <span class="room-tag">Popular</span>
+                </div>
+                <div class="room-content">
+                    <h3 class="room-title">Standard Room</h3>
+                    <p class="room-desc">Comfortable for individuals or couples with all basic amenities.</p>
+                    <div class="room-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 25m²</span>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">$85</span>
+                        <span class="price-period">/night</span>
+                    </div>
+                    <a href="booking.html" class="btn btn-secondary btn-block">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Additional room cards would follow the same pattern -->
+        </div>
+
+        <div class="section-cta">
+            <a href="booking.html" class="btn btn-primary">View All Rooms</a>
+        </div>
+    </div>
+</section>
+
+<!-- Dining Preview -->
+<section class="dining-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">African Culinary Experience</h2>
+            <p class="section-subtitle">Taste our authentic local dishes</p>
+        </div>
+
+        <div class="dining-grid">
+            <div class="dining-card">
+                <div class="dining-image" style="background-image: url('assets/breakfast-4474527_1280.jpg')"></div>
+                <div class="dining-content">
+                    <h3 class="dining-title">Breakfast</h3>
+                    <p class="dining-desc">Start your day with our traditional morning dishes and fresh juices.</p>
+                    <a href="dining.html" class="btn btn-text">View Menu <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="dining-card">
+                <div class="dining-image" style="background-image: url('assets/pexels-alexy-almond-3756523.jpg')"></div>
+                <div class="dining-content">
+                    <h3 class="dining-title">Breakfast</h3>
+                    <p class="dining-desc">Start your day with our traditional morning dishes and fresh juices.</p>
+                    <a href="dining.html" class="btn btn-text">View Menu <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="dining-card">
+                <div class="dining-image" style="background-image: url('assets/pexels-august-de-richelieu-4261994.jpg')"></div>
+                <div class="dining-content">
+                    <h3 class="dining-title">Breakfast</h3>
+                    <p class="dining-desc">Start your day with our traditional morning dishes and fresh juices.</p>
+                    <a href="dining.html" class="btn btn-text">View Menu <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Additional dining cards would follow the same pattern -->
+        </div>
+    </div>
+</section>
+
+<!-- Activities Preview -->
+<section class="activities-preview">
+    <div class="container">
+        <h2 class="section-title">Recreation & Activities</h2>
+        <p class="section-subtitle">Enjoy our facilities and entertainment options</p>
+
+        <div class="activities-grid">
+            <div class="activity-card">
+                <div class="activity-image" style="background-image: url('assets/pexels-jibarofoto-2091400.jpg')"></div>
+                <div class="activity-content">
+                    <h3 class="activity-title">Swimming</h3>
+                    <a href="activities.html" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-image" style="background-image: url('assets/pexels-delvis-2444852.jpg')"></div>
+                <div class="activity-content">
+                    <h3 class="activity-title">Ball Games</h3>
+                    <a href="activities.html" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-image" style="background-image: url('assets/pexels-tkirkgoz-19670301.jpg')"></div>
+                <div class="activity-content">
+                    <h3 class="activity-title">Park Visits</h3>
+                    <a href="activities.html" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Additional activity cards would follow the same pattern -->
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">What Our Guests Say</h2>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The perfect blend of comfort and authentic African hospitality. The food was exceptional!"</p>
+                <div class="testimonial-author">
+                    <img src="assets/pexels-tubarones-2764976.jpg" alt="Sarah J." class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">Sarah J.</h4>
+                        <p class="author-location">Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The perfect blend of comfort and authentic African hospitality. The food was exceptional!"</p>
+                <div class="testimonial-author">
+                    <img src="assets/pexels-dystopiasavagestudios-19330681.jpg" alt="Sarah J." class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">Janice H.</h4>
+                        <p class="author-location">Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The perfect blend of comfort and authentic African hospitality. The food was exceptional!"</p>
+                <div class="testimonial-author">
+                    <img src="assets/pexels-thirdman-5060987.jpg" alt="Derek K." class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">Andre P.</h4>
+                        <p class="author-location">Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional testimonials would follow the same pattern -->
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready for an Unforgettable Experience?</h2>
+            <p class="cta-text">Book your stay now and enjoy African hospitality at its finest.</p>
+            <div class="cta-buttons">
+                <a href="booking.html" class="btn btn-primary btn-lg">Book Now</a>
+                <a href="contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/sungano-logo.png" alt="Motel Sungano Logo">
+                    <span>Motel Sungano</span>
+                </a>
+                <p class="footer-about-text">Providing exceptional hospitality services with authentic African charm since 2010.</p>
+
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col footer-links">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="booking.html" class="footer-link">Book a Stay</a></li>
+                    <li><a href="events.html" class="footer-link">Events</a></li>
+                    <li><a href="dining.html" class="footer-link">Dining</a></li>
+                    <li><a href="activities.html" class="footer-link">Activities</a></li>
+                    <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contact">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul class="footer-contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Resort Lane, Nairobi, Kenya</li>
+                    <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@motelsungano.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-newsletter-text">Subscribe for updates and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" class="form-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Motel Sungano. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <a href="#" class="legal-link">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

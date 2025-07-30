@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motel Sungano - Premium guest house with dining and recreational activities">
+    <title>Motel Sungano - Booking</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header with Navigation -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="assets/sungano-logo.png" alt="Motel Sungano Logo">
+            <span>Motel Sungano</span>
+        </a>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="booking.html" class="nav-link">Book a Stay</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="dining.html" class="nav-link">Dining</a></li>
+                <li><a href="activities.html" class="nav-link">Activities</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Booking Hero Section -->
+<section class="booking-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Book Your Perfect Stay</h1>
+            <p class="hero-subtitle">Choose from our comfortable accommodations and plan your visit</p>
+        </div>
+    </div>
+</section>
+
+<!-- Booking Main Section -->
+<section class="booking-main">
+    <div class="container">
+        <div class="booking-container">
+            <!-- Booking Form Column -->
+            <div class="booking-form-col">
+                <h2 class="section-title">Reservation Details</h2>
+
+                <form class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="check-in">Check-In Date</label>
+                            <input type="date" id="check-in" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="check-out">Check-Out Date</label>
+                            <input type="date" id="check-out" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adults">Adults</label>
+                            <select id="adults" class="form-input" required>
+                                <option value="1">1 Adult</option>
+                                <option value="2" selected>2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="children">Children</label>
+                            <select id="children" class="form-input">
+                                <option value="0" selected>0 Children</option>
+                                <option value="1">1 Child</option>
+                                <option value="2">2 Children</option>
+                                <option value="3">3 Children</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="room-type">Room Type</label>
+                        <select id="room-type" class="form-input" required>
+                            <option value="">Select Room Type</option>
+                            <option value="standard">Standard Room</option>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="suite">Executive Suite</option>
+                            <option value="family">Family Room</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" class="form-input" rows="4" placeholder="Any special requirements or preferences..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="dining-option" class="form-checkbox">
+                            <span>Include breakfast buffet ($15 per person per day)</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Check Availability</button>
+                </form>
+            </div>
+
+            <!-- Booking Summary Column -->
+            <div class="booking-summary-col">
+                <div class="summary-card">
+                    <h3 class="summary-title">Your Booking Summary</h3>
+
+                    <div class="summary-dates">
+                        <div class="date-item">
+                            <span class="date-label">Check-In</span>
+                            <span class="date-value" id="summary-checkin">--/--/----</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="date-label">Check-Out</span>
+                            <span class="date-value" id="summary-checkout">--/--/----</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="date-label">Nights</span>
+                            <span class="date-value" id="summary-nights">0</span>
+                        </div>
+                    </div>
+
+                    <div class="summary-guests">
+                        <h4>Guests</h4>
+                        <p id="summary-guests">0 Adults, 0 Children</p>
+                    </div>
+
+                    <div class="summary-room">
+                        <h4>Room Selected</h4>
+                        <p id="summary-room">Not selected</p>
+                    </div>
+
+                    <div class="summary-extras">
+                        <h4>Extras</h4>
+                        <p id="summary-extras">None</p>
+                    </div>
+
+                    <div class="summary-total">
+                        <h4>Estimated Total</h4>
+                        <p id="summary-total">$0.00</p>
+                    </div>
+
+                    <div class="summary-notes">
+                        <p>Rates are subject to change until reservation is confirmed. Taxes not included.</p>
+                    </div>
+                </div>
+
+                <div class="benefits-card">
+                    <h3>Why Book With Us</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> Best price guarantee</li>
+                        <li><i class="fas fa-check-circle"></i> No booking fees</li>
+                        <li><i class="fas fa-check-circle"></i> Free cancellation (48hrs notice)</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 customer support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Room Options Section -->
+<section class="room-options">
+    <div class="container">
+        <h2 class="section-title">Our Accommodation Options</h2>
+        <p class="section-subtitle">Choose the perfect room for your stay</p>
+
+        <div class="room-grid">
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('assets/pexels-martin-rivera-334692485-16197244.jpg')">
+                    <span class="room-tag">Most Popular</span>
+                </div>
+                <div class="room-content">
+                    <h3 class="room-title">Standard Room</h3>
+                    <p class="room-desc">Comfortable for individuals or couples with all basic amenities including en-suite bathroom, TV, and WiFi.</p>
+                    <div class="room-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 25m²</span>
+                        <span><i class="fas fa-bed"></i> 1 Queen Bed</span>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">$85</span>
+                        <span class="price-period">/night</span>
+                    </div>
+                    <button class="btn btn-secondary btn-block select-room" data-room-type="standard">Select Room</button>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('assets/hotelroom-7772422_1280.jpg')">
+                    <span class="room-tag">Most Popular</span>
+                </div>
+                <div class="room-content">
+                    <h3 class="room-title">Standard Room</h3>
+                    <p class="room-desc">Comfortable for individuals or couples with all basic amenities including en-suite bathroom, TV, and WiFi.</p>
+                    <div class="room-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 25m²</span>
+                        <span><i class="fas fa-bed"></i> 1 Queen Bed</span>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">$85</span>
+                        <span class="price-period">/night</span>
+                    </div>
+                    <button class="btn btn-secondary btn-block select-room" data-room-type="standard">Select Room</button>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('assets/hotelroom-7772422_1280.jpg')">
+                    <span class="room-tag">Most Popular</span>
+                </div>
+                <div class="room-content">
+                    <h3 class="room-title">Standard Room</h3>
+                    <p class="room-desc">Comfortable for individuals or couples with all basic amenities including en-suite bathroom, TV, and WiFi.</p>
+                    <div class="room-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 25m²</span>
+                        <span><i class="fas fa-bed"></i> 1 Queen Bed</span>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">$85</span>
+                        <span class="price-period">/night</span>
+                    </div>
+                    <button class="btn btn-secondary btn-block select-room" data-room-type="standard">Select Room</button>
+                </div>
+            </div>
+
+            <!-- Additional room cards would follow same pattern -->
+        </div>
+    </div>
+</section>
+
+<!-- Booking FAQ Section -->
+<section class="booking-faq">
+    <div class="container">
+        <h2 class="section-title">Booking Information</h2>
+
+        <div class="faq-grid">
+            <div class="faq-card">
+                <h3 class="faq-question">What is your cancellation policy?<i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-answer">
+                    <p>You can cancel your reservation free of charge up to 48 hours before your check-in date. Cancellations made less than 48 hours before check-in will incur a charge equivalent to one night's stay.</p>
+                </div>
+            </div>
+
+            <!-- Additional FAQ items would follow same pattern -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/sungano-logo.png" alt="Motel Sungano Logo">
+                    <span>Motel Sungano</span>
+                </a>
+                <p class="footer-about-text">Providing exceptional hospitality services with authentic African charm since 2010.</p>
+
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col footer-links">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="booking.html" class="footer-link">Book a Stay</a></li>
+                    <li><a href="events.html" class="footer-link">Events</a></li>
+                    <li><a href="dining.html" class="footer-link">Dining</a></li>
+                    <li><a href="activities.html" class="footer-link">Activities</a></li>
+                    <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contact">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul class="footer-contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Resort Lane, Nairobi, Kenya</li>
+                    <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                    <li><i class="fas fa-envelope"></i> info@motelsungano.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-newsletter-text">Subscribe for updates and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" class="form-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Motel Sungano. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <a href="#" class="legal-link">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/booking.js"></script>
+</body>
+</html>
